@@ -1,0 +1,9 @@
+.projects {
+  min-height: 50vh;
+}
+
+.projects h1 {
+  margin: auto;
+  text-align: center;
+  font-size: 4rem;
+}
