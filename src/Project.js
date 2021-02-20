@@ -1,10 +1,23 @@
 import React from 'react';
 import './stylesheets/Project.css';
+// import axios from './axios';
 
 function Project() {
+    // const [projects, setProjects] = useState([]);
+
+    // useEffect(() => {
+    //     async function fetchData() {
+    //         const req = await axios.get('/tinder/cards');
+    //         setProjects(req.data);
+    //     }
+
+    //     fetchData();
+    // }, []);
+
     return (
         <div className='project'>
             <img src='https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__340.jpg' />
+            {/* {projects.map((project) => ( */}
             <div class="project__content">
                 <h2>Wool Halt</h2>
                 <h3>This is a an e-commerce site designed and built by me</h3>
@@ -26,6 +39,7 @@ function Project() {
                     <a href='https://quiet-ridge-27931.herokuapp.com/' target="_blank">View Site</a>
                 </div>
             </div>
+            {/* ))} */}
         </div>
     )
 }
