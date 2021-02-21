@@ -1,45 +1,31 @@
 import React from 'react';
 import './stylesheets/Project.css';
-// import axios from './axios';
 
-function Project() {
-    // const [projects, setProjects] = useState([]);
-
-    // useEffect(() => {
-    //     async function fetchData() {
-    //         const req = await axios.get('/tinder/cards');
-    //         setProjects(req.data);
-    //     }
-
-    //     fetchData();
-    // }, []);
-
+function Project({ project }) {
     return (
         <div className='project'>
-            <img src='https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__340.jpg' />
-            {/* {projects.map((project) => ( */}
-            <div class="project__content">
-                <h2>Wool Halt</h2>
-                <h3>This is a an e-commerce site designed and built by me</h3>
-                <div class="project__info">
+            <img src={project.imgUrl} />
+            <div className="project__content">
+                <h2>{project.title}</h2>
+                <h3>{project.description}</h3>
+                <div className="project__info">
                     <div className="project__block">
                         <br /><h3>Technologies used:</h3>
-                        <h4>Frontend: HTML, CSS, JS</h4>
-                        <h4>Backend: NodeJS, MongoDB</h4>
+                        <h4><b>Frontend:</b> {project.frontendtechnologies}</h4>
+                        <h4><b>Backend:</b> {project.backendtechnologies}</h4>
                     </div>
                     <div className="project__block">
                         <br /><h3>Features:</h3>
                         <h4>
-                            User Authentication, Database, cart functionality, 
-                            <br />Place and view orders, all admin controls and more...
+                            {project.features}
                         </h4>
                     </div>
                 </div>
-                <div class="project__buttons">
-                    <a href='https://quiet-ridge-27931.herokuapp.com/' target="_blank">View Site</a>
+                <div className="project__buttons">
+                    <a href={project.siteUrl} target="_blank">View Site</a>
+                    {project.codeUrl !== ''? <a href={project.codeUrl} target="_blank">View Code</a> : '' }
                 </div>
             </div>
-            {/* ))} */}
         </div>
     )
 }

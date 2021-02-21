@@ -1,6 +1,14 @@
 .buttons {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
   margin: auto;
   width: 60%;
+}
+
+@media (max-width: 1000px) {
+  .buttons {
+    width: 100%;
+    justify-content: space-around;
+  }
 }

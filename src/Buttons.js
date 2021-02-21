@@ -12,22 +12,22 @@ function Buttons() {
     return (
         <div className="buttons">
             <IconButton>
-                    <LinkedInIcon fontSize='medium' className="header__icon" />
+                    <a target="_blank" href='https://www.linkedin.com/in/jayesh-sadhwani-07458b199/'><LinkedInIcon className="header__icon"/></a>
             </IconButton>
             <IconButton>
-                <GitHubIcon fontSize='medium' className="header__icon" />
+                <a target="_blank" href='https://github.com/jayeshsadhwani99'><GitHubIcon className="header__icon" /></a>
             </IconButton>
             <IconButton>
-                <InstagramIcon fontSize='medium' className="header__icon" />
+                <a target="_blank" href='https://www.instagram.com/jayeshsadhwani99/'><InstagramIcon className="header__icon" /></a>
             </IconButton>
             <IconButton>
-                <TwitterIcon fontSize='medium' className="header__icon" />
+                <a target="_blank" href='https://twitter.com/jayeshsadhwani9'><TwitterIcon className="header__icon" /></a>
             </IconButton>
             <IconButton>
-                <FacebookIcon fontSize='medium' className="header__icon" />
+                <a target="_blank" href='https://www.facebook.com/jayesh.sadhwani.75'><FacebookIcon className="header__icon" /></a>
             </IconButton>
             <IconButton>
-                <EmailIcon fontSize='medium' className="header__icon" />
+                <a target="_blank" href='mailto:jayeshsadhwani99@gmail.com'><EmailIcon className="header__icon" /></a>
             </IconButton>
         </div>
     )

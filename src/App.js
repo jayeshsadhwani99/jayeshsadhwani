@@ -7,7 +7,9 @@ function App() {
   return (
     <div className="app">
       <Header />
+      <a name='projectsLink'></a>
       <Projects />
+      <a name='about'></a>
       <About />
     </div>
   );

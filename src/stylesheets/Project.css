@@ -1,5 +1,6 @@
 .project {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   padding: 1rem;
   width: 80%;
@@ -9,13 +10,10 @@
 }
 
 .project img {
-  width: 20rem;
-  height: 15rem;
+  width: 50vw;
+  height: 30%;
+  margin: 1rem auto;
   border-radius: 10px;
-}
-
-.project__content {
-  padding-left: 1rem;
 }
 
 .project__content h2 {
@@ -35,7 +33,7 @@
 .project__info {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  flex-grow: 1;
 }
 
 .project__block {
@@ -47,12 +45,13 @@
 }
 
 .project__buttons {
-  margin-top: 2rem;
+  margin: 2rem 0;
 }
 
 .project__buttons a {
   text-decoration: none;
   padding: 1rem;
+  margin-right: 1rem;
   background: black;
   color: white;
   border: 2px solid black;
@@ -62,4 +61,11 @@
 .project__buttons a:hover {
   color: black;
   background: transparent;
+}
+
+@media (max-width: 768px) {
+  .project img {
+    width: 70vw;
+    height: 30%;
+  }
 }
